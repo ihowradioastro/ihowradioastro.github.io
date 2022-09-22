@@ -413,6 +413,7 @@ ul li {
 .speaker h4 {
   margin-top: 15px;
   margin-bottom: 5px;
+  text-transform: capitalize;
 }
 .speaker p {
   margin-bottom: 5px;
