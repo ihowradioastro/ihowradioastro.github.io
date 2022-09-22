@@ -595,6 +595,18 @@ ul li {
     width: 25%;
   }
 }
+ /*
+ * 6.10 Section: visa
+ */
+ .visa {
+  text-align: center;
+  color: #fff;
+}
+
+.contact {
+  text-align: left;
+  color: #5c5454;
+}
 /*
  * 7.0 Site-footer
  */
