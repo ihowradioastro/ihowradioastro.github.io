@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
 </head>
 <body data-spy="scroll" data-target="#site-nav">
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
@@ -229,6 +231,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="section-title">Venue</h3>
+                    <h4 class="section-title">Location</h4>
+
+                    <div id = "map" style = "width: 500px; height: 450px"></div>
+                    </br>
+                    <p>Larak Garden, opposite Araj, Artesh Highway,Tehran, Iran</br>
+                    <a href = "https://www.google.com/maps/place/Institute+for+Astronomy/@35.8039058,51.4900625,17z/data=!4m5!3m4!1s0x3f8e051f03317155:0xb31622adb7a45cc1!8m2!3d35.8053223!4d51.4915255">Google map link</a>
+                    </p>
+                    <h4 class="section-title">Accomodation</h4>
 
                 </div>
             </div>
@@ -279,5 +289,43 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <!-- <script>
+                 // Creating map options
+                 var mapOptions = {
+                    center: [17.385044, 78.486671],
+                    zoom: 10
+                 }
+                 
+                 // Creating a map object
+                 var map = new L.map('map', mapOptions);
+                 
+                 // Creating a Layer object
+                 var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+                 
+                 // Adding layer to the map
+                 map.addLayer(layer);
+    </script> -->
+    <script>
+        let mapOptions = {
+    center:[35.80206,51.49043],
+    zoom:10
+    }
+    let map = new L.map('map' , mapOptions);let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+    map.addLayer(layer);let customIcon = {
+    iconUrl:"https://image.flaticon.com/icons/png/512/1397/1397898.png",
+    iconSize:[40,40]
+    }
+    let myIcon = L.icon(customIcon);
+    let iconOptions = {
+    title:"company name",
+    draggable:true,
+    icon:myIcon
+    }
+    let marker = new L.Marker([35.80206,51.49043] , iconOptions);
+    marker.addTo(map);
+    marker.bindPopup("content").openPopup();let popup = L.popup().setLatLng([35.80206,51.49043] ).setContent("<p>IPM</br> پژوهشگاه دانشهای بنیادی</p>").openOn(map);
+    </script>
+
 </body>
 </html>
