@@ -438,6 +438,10 @@ ul li {
   text-align: left;
   color: #5c5454;
 }
+.contribution img{
+  width: 100%;
+  height: auto;
+}
 
 .contact {
   text-align: left;
