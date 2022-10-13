@@ -322,7 +322,7 @@ ul li {
   min-height: 100vh;
   position: relative;
   text-align: center;
-  background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
+  background: url(../images/backgrounds/header.png) no-repeat center center/cover;
   display: table;
 }
 .site-header::before {
@@ -427,16 +427,16 @@ ul li {
  */
 
 .registration {
-  background-color: #e2e2e2c0;
+  background-color: #f7f7f7;
   text-align: left;
   color: #5c5454;
 }
- /*
+/*
  * 6.5 Section: Contribution
  */
 .contribution {
-  text-align: center;
-  color: #fff;
+  text-align: left;
+  color: #5c5454;
 }
 
 .contact {
@@ -491,10 +491,12 @@ ul li {
 .partner .partner-box-3 {
   background: url(../images/partner/SARAMADAN.png) no-repeat center center/contain;
 }
-.partner .partner-box-4 {
+.partner .sbu {
   background: url(../images/partner/SBU.png) no-repeat center center/contain;
+  height: 140px;
+  width: 140px;
 }
-.partner .partner-box-5 {
+.partner .gbmf {
   background: url(../images/partner/GBMF.png) no-repeat center center/contain;
 }
 .partner .partner-box-6 {
@@ -596,14 +598,14 @@ ul li {
     width: 25%;
   }
 }
- /*
+/*
  * 6.10 Section: visa
  */
  .visa {
+  background-color: #1a2238;
   text-align: center;
   color: #fff;
 }
-
 .contact {
   text-align: left;
   color: #5c5454;
