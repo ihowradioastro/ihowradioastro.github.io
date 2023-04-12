@@ -387,6 +387,7 @@ ul li {
 }
 .about {
   background-color: #ecebed;
+  text-align: justify;
 }
 
 /*
@@ -429,9 +430,11 @@ ul li {
 
 .registration {
   background-color: #f7f7f7;
-  text-align: left;
+  /* text-align: left; */
+  text-align: justify;
   color: #5c5454;
 }
+
 /*
  * 6.5 Section: Contribution
  */
@@ -608,9 +611,35 @@ ul li {
  */
  .visa {
   background-color: #1a2238;
-  text-align: center;
+  text-align: justify;
   color: #fff;
 }
+/*
+ * 6.11 Section: venue
+ */
+ .venue {
+  text-align: justify;
+  color: #5c5454;
+}
+.venue img{
+  width: 100%;
+  height: auto;
+}
+/*
+ * 6.12 Section: accommodation
+ */
+ .accommodation {
+  background-color: #ecebed;
+  text-align: justify;
+  color: #5c5454;
+}
+.accommodation img{
+  width: 100%;
+  height: auto;
+}
+/*
+ * 6.13 Section: contact
+ */
 .contact {
   text-align: left;
   color: #5c5454;
