@@ -645,6 +645,15 @@ ul li {
   color: #5c5454;
 }
 /*
+ * 6.14 Section: program
+ */
+ .program {
+  background-color: #dddcdf;
+  text-align: justify;
+  color: #5c5454;
+}
+/*
+/*
  * 7.0 Site-footer
  */
 .site-footer {
