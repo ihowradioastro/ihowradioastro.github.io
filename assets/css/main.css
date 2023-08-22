@@ -246,13 +246,13 @@ ul li {
 /*
  * commented out by smhr
  */
-  /* .section-title {
+  .section-title {
     color: #313131;
     letter-spacing: 1px;
     margin: 0 0 60px;
     text-transform: uppercase;
     text-align: left;
-  } */
+  }
   
 }
 /*
@@ -591,9 +591,6 @@ ul li {
   background-color: #11041d;
 }
 
-p {
-  text-align: center;
-}
 
 @media (min-width: 768px) {
   .grid-item-sm-6 {
