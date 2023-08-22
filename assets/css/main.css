@@ -243,13 +243,17 @@ ul li {
     padding: 90px 0;
   }
 
-  .section-title {
+/*
+ * commented out by smhr
+ */
+  /* .section-title {
     color: #313131;
     letter-spacing: 1px;
     margin: 0 0 60px;
     text-transform: uppercase;
     text-align: left;
-  }
+  } */
+  
 }
 /*
  * 4.0 Navigation
